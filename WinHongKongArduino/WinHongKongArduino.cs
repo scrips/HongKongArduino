@@ -38,6 +38,12 @@ namespace WinHongKongArduino
             cmbROMCompo.Items.Add("ROM");
             cmbROMCompo.Items.Add("ROM+RAM");
             cmbROMCompo.Items.Add("ROM+SRAM");
+            cmbROMCompo.Items.Add("ROM+RAM+DSP1");
+            cmbROMCompo.Items.Add("ROM+SRAM+DSP1");
+            cmbROMCompo.Items.Add("ROM+SuperFX");
+            cmbROMCompo.Items.Add("ROM+RAM+GB");
+            cmbROMCompo.Items.Add("ROM+SRAM");
+            cmbROMCompo.Items.Add("ROM+DSP2");
 
             // ROMサイズ
             cmbROMSize.Items.Add("8MB");
@@ -272,6 +278,49 @@ namespace WinHongKongArduino
             port.Dispose();
         }
 
+        private void readRAM(byte[] data, int offset, int address, int size, bool isLoROM = false)
+        {
+            string portName = cmbCOMPort.SelectedItem.ToString();
+            SerialPort port = new SerialPort(portName, 115200);
+
+            port.Open();
+
+            byte[] cmd = new byte[7];
+            if (isLoROM)
+            {
+                cmd[0] = (byte)'r'; // LoROM
+            }
+            else
+            {
+                cmd[0] = (byte)'R'; // HiROM
+            }
+
+            cmd[1] = (byte)(address >> (8 * 0));
+            cmd[2] = (byte)(address >> (8 * 1));
+            cmd[3] = (byte)(address >> (8 * 2));
+
+            cmd[4] = (byte)(size >> (8 * 0));
+            cmd[5] = (byte)(size >> (8 * 1));
+            cmd[6] = (byte)(size >> (8 * 2));
+
+            port.Write(cmd, 0, cmd.Length);
+
+            int readbyte = 0;
+            while (readbyte < size)
+            {
+                readbyte += port.Read(data, offset + readbyte, size - readbyte);
+
+                // 進行状況表示
+                toolStripProgressBar.Value = readbyte;
+                Application.DoEvents();
+
+                System.Threading.Thread.Sleep(1);
+            }
+
+            port.Close();
+            port.Dispose();
+        }
+
         private void sendControl(byte b)
         {
             string portName = cmbCOMPort.SelectedItem.ToString();
@@ -286,6 +335,11 @@ namespace WinHongKongArduino
 
             port.Close();
             port.Dispose();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
