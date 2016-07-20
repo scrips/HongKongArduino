@@ -117,4 +117,449 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Country_00" xml:space="preserve">
+    <value>Japan</value>
+  </data>
+  <data name="Country_01" xml:space="preserve">
+    <value>Nouth America</value>
+  </data>
+  <data name="Country_02" xml:space="preserve">
+    <value>All of Europe</value>
+  </data>
+  <data name="Country_03" xml:space="preserve">
+    <value>Scandinavia</value>
+  </data>
+  <data name="Country_06" xml:space="preserve">
+    <value>Europe (French only)</value>
+  </data>
+  <data name="Country_07" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="Country_08" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="Country_09" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="Country_0A" xml:space="preserve">
+    <value>Italian</value>
+  </data>
+  <data name="Country_0B" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="Country_0D" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="Country_0E" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="Country_0F" xml:space="preserve">
+    <value>Canada</value>
+  </data>
+  <data name="Country_10" xml:space="preserve">
+    <value>Brazil</value>
+  </data>
+  <data name="Country_11" xml:space="preserve">
+    <value>Australia</value>
+  </data>
+  <data name="Country_12" xml:space="preserve">
+    <value>Other Variation</value>
+  </data>
+  <data name="Country_13" xml:space="preserve">
+    <value>Other Variation</value>
+  </data>
+  <data name="Country_14" xml:space="preserve">
+    <value>Other Variation</value>
+  </data>
+  <data name="License_00" xml:space="preserve">
+    <value>&lt;Invalid License Code&gt;</value>
+  </data>
+  <data name="License_01" xml:space="preserve">
+    <value>Nintendo</value>
+  </data>
+  <data name="License_05" xml:space="preserve">
+    <value>Zamuse</value>
+  </data>
+  <data name="License_08" xml:space="preserve">
+    <value>Capcom</value>
+  </data>
+  <data name="License_09" xml:space="preserve">
+    <value>HOT B</value>
+  </data>
+  <data name="License_0A" xml:space="preserve">
+    <value>Jaleco</value>
+  </data>
+  <data name="License_0B" xml:space="preserve">
+    <value>STORM (Sales Curve) (1)</value>
+  </data>
+  <data name="License_0F" xml:space="preserve">
+    <value>Mebio Software</value>
+  </data>
+  <data name="License_12" xml:space="preserve">
+    <value>Gremlin Graphics</value>
+  </data>
+  <data name="License_15" xml:space="preserve">
+    <value>COBRA Team</value>
+  </data>
+  <data name="License_16" xml:space="preserve">
+    <value>Human/Field</value>
+  </data>
+  <data name="License_18" xml:space="preserve">
+    <value>Hudson Soft</value>
+  </data>
+  <data name="License_1A" xml:space="preserve">
+    <value>Yanoman</value>
+  </data>
+  <data name="License_1C" xml:space="preserve">
+    <value>Tecmo (1)</value>
+  </data>
+  <data name="License_1E" xml:space="preserve">
+    <value>Forum</value>
+  </data>
+  <data name="License_1F" xml:space="preserve">
+    <value>Park Place Productions / VIRGIN</value>
+  </data>
+  <data name="License_21" xml:space="preserve">
+    <value>Tokai Engeneering (SUNSOFT?)</value>
+  </data>
+  <data name="License_22" xml:space="preserve">
+    <value>POW</value>
+  </data>
+  <data name="License_23" xml:space="preserve">
+    <value>Loriciel / Micro World</value>
+  </data>
+  <data name="License_26" xml:space="preserve">
+    <value>Enix</value>
+  </data>
+  <data name="License_28" xml:space="preserve">
+    <value>Kemco (1)</value>
+  </data>
+  <data name="License_29" xml:space="preserve">
+    <value>Seta Co.,Ltd.</value>
+  </data>
+  <data name="License_2D" xml:space="preserve">
+    <value>Visit Co.,Ltd.</value>
+  </data>
+  <data name="License_35" xml:space="preserve">
+    <value>HECT</value>
+  </data>
+  <data name="License_3D" xml:space="preserve">
+    <value>Loriciel</value>
+  </data>
+  <data name="License_40" xml:space="preserve">
+    <value>Seika Corp.</value>
+  </data>
+  <data name="License_41" xml:space="preserve">
+    <value>UBI Soft</value>
+  </data>
+  <data name="License_47" xml:space="preserve">
+    <value>Spectrum Holobyte</value>
+  </data>
+  <data name="License_49" xml:space="preserve">
+    <value>Irem</value>
+  </data>
+  <data name="License_4B" xml:space="preserve">
+    <value>Raya Systems/Sculptured Software</value>
+  </data>
+  <data name="License_4C" xml:space="preserve">
+    <value>Renovation Pruducts</value>
+  </data>
+  <data name="License_4D" xml:space="preserve">
+    <value>Malibu Games (T*HQ Inc.) / Black Pearl</value>
+  </data>
+  <data name="License_4F" xml:space="preserve">
+    <value>U.S. Gold</value>
+  </data>
+  <data name="License_50" xml:space="preserve">
+    <value>Absolute Entertainment</value>
+  </data>
+  <data name="License_51" xml:space="preserve">
+    <value>Acclaim</value>
+  </data>
+  <data name="License_52" xml:space="preserve">
+    <value>Activision</value>
+  </data>
+  <data name="License_53" xml:space="preserve">
+    <value>American Sammy</value>
+  </data>
+  <data name="License_54" xml:space="preserve">
+    <value>GameTek</value>
+  </data>
+  <data name="License_55" xml:space="preserve">
+    <value>Hi Tech</value>
+  </data>
+  <data name="License_56" xml:space="preserve">
+    <value>LJN Toys</value>
+  </data>
+  <data name="License_5A" xml:space="preserve">
+    <value>Mindscape</value>
+  </data>
+  <data name="License_5D" xml:space="preserve">
+    <value>Technos Japan Corp. (Tradewest)</value>
+  </data>
+  <data name="License_5F" xml:space="preserve">
+    <value>American Softworks Corp.</value>
+  </data>
+  <data name="License_60" xml:space="preserve">
+    <value>Titus</value>
+  </data>
+  <data name="License_61" xml:space="preserve">
+    <value>Virgin Games</value>
+  </data>
+  <data name="License_62" xml:space="preserve">
+    <value>Maxis</value>
+  </data>
+  <data name="License_67" xml:space="preserve">
+    <value>Ocean</value>
+  </data>
+  <data name="License_69" xml:space="preserve">
+    <value>Electronic Arts</value>
+  </data>
+  <data name="License_6B" xml:space="preserve">
+    <value>Laser Beam</value>
+  </data>
+  <data name="License_6E" xml:space="preserve">
+    <value>Elite</value>
+  </data>
+  <data name="License_6F" xml:space="preserve">
+    <value>Electro Brain</value>
+  </data>
+  <data name="License_70" xml:space="preserve">
+    <value>Infogrames</value>
+  </data>
+  <data name="License_71" xml:space="preserve">
+    <value>Interplay</value>
+  </data>
+  <data name="License_72" xml:space="preserve">
+    <value>LucasArts</value>
+  </data>
+  <data name="License_73" xml:space="preserve">
+    <value>Sculptured Soft</value>
+  </data>
+  <data name="License_75" xml:space="preserve">
+    <value>STORM (Sales Curve) (2)</value>
+  </data>
+  <data name="License_78" xml:space="preserve">
+    <value>THQ Software</value>
+  </data>
+  <data name="License_79" xml:space="preserve">
+    <value>Accolade Inc.</value>
+  </data>
+  <data name="License_7A" xml:space="preserve">
+    <value>Triffix Entertainment</value>
+  </data>
+  <data name="License_7C" xml:space="preserve">
+    <value>Microprose</value>
+  </data>
+  <data name="License_7F" xml:space="preserve">
+    <value>Kemco (2)</value>
+  </data>
+  <data name="License_82" xml:space="preserve">
+    <value>Namcot/Namco Ltd. (1)</value>
+  </data>
+  <data name="License_84" xml:space="preserve">
+    <value>Koei/Koei! (second license?)</value>
+  </data>
+  <data name="License_86" xml:space="preserve">
+    <value>Tokuma Shoten Intermedia</value>
+  </data>
+  <data name="License_88" xml:space="preserve">
+    <value>DATAM-Polystar</value>
+  </data>
+  <data name="License_8B" xml:space="preserve">
+    <value>Bullet-Proof Software</value>
+  </data>
+  <data name="License_8C" xml:space="preserve">
+    <value>Vic Tokai</value>
+  </data>
+  <data name="License_8F" xml:space="preserve">
+    <value>I'Max</value>
+  </data>
+  <data name="License_91" xml:space="preserve">
+    <value>CHUN Soft</value>
+  </data>
+  <data name="License_92" xml:space="preserve">
+    <value>Video System Co., Ltd.</value>
+  </data>
+  <data name="License_93" xml:space="preserve">
+    <value>BEC</value>
+  </data>
+  <data name="License_97" xml:space="preserve">
+    <value>Kaneco</value>
+  </data>
+  <data name="License_99" xml:space="preserve">
+    <value>Pack in Video</value>
+  </data>
+  <data name="License_9A" xml:space="preserve">
+    <value>Nichibutsu</value>
+  </data>
+  <data name="License_9B" xml:space="preserve">
+    <value>TECMO (2)</value>
+  </data>
+  <data name="License_9C" xml:space="preserve">
+    <value>Imagineer Co.</value>
+  </data>
+  <data name="License_A0" xml:space="preserve">
+    <value>Wolf Team</value>
+  </data>
+  <data name="License_A4" xml:space="preserve">
+    <value>Konami</value>
+  </data>
+  <data name="License_A5" xml:space="preserve">
+    <value>K.Amusement</value>
+  </data>
+  <data name="License_A7" xml:space="preserve">
+    <value>Takara</value>
+  </data>
+  <data name="License_A9" xml:space="preserve">
+    <value>Technos Jap. ????</value>
+  </data>
+  <data name="License_AA" xml:space="preserve">
+    <value>JVC</value>
+  </data>
+  <data name="License_AC" xml:space="preserve">
+    <value>Toei Animation</value>
+  </data>
+  <data name="License_AD" xml:space="preserve">
+    <value>Toho</value>
+  </data>
+  <data name="License_AF" xml:space="preserve">
+    <value>Namcot/Namco Ltd. (2)</value>
+  </data>
+  <data name="License_B1" xml:space="preserve">
+    <value>ASCII Co. Activison</value>
+  </data>
+  <data name="License_B2" xml:space="preserve">
+    <value>BanDai America</value>
+  </data>
+  <data name="License_B4" xml:space="preserve">
+    <value>Enix</value>
+  </data>
+  <data name="License_B6" xml:space="preserve">
+    <value>Halken</value>
+  </data>
+  <data name="License_BA" xml:space="preserve">
+    <value>Culture Brain</value>
+  </data>
+  <data name="License_BB" xml:space="preserve">
+    <value>Sunsoft</value>
+  </data>
+  <data name="License_BC" xml:space="preserve">
+    <value>Toshiba EMI/System Vision</value>
+  </data>
+  <data name="License_BD" xml:space="preserve">
+    <value>Sony (Japan) / Imagesoft</value>
+  </data>
+  <data name="License_BF" xml:space="preserve">
+    <value>Sammy</value>
+  </data>
+  <data name="License_C0" xml:space="preserve">
+    <value>Taito</value>
+  </data>
+  <data name="License_C2" xml:space="preserve">
+    <value>Kemco (3) ????</value>
+  </data>
+  <data name="License_C3" xml:space="preserve">
+    <value>Square</value>
+  </data>
+  <data name="License_C4" xml:space="preserve">
+    <value>NHK</value>
+  </data>
+  <data name="License_C5" xml:space="preserve">
+    <value>Data East</value>
+  </data>
+  <data name="License_C6" xml:space="preserve">
+    <value>Tonkin House</value>
+  </data>
+  <data name="License_C8" xml:space="preserve">
+    <value>KOEI</value>
+  </data>
+  <data name="License_CA" xml:space="preserve">
+    <value>Konami USA</value>
+  </data>
+  <data name="License_CD" xml:space="preserve">
+    <value>Meldac/KAZe</value>
+  </data>
+  <data name="License_CE" xml:space="preserve">
+    <value>PONY CANYON</value>
+  </data>
+  <data name="License_CF" xml:space="preserve">
+    <value>Sotsu Agency</value>
+  </data>
+  <data name="License_D1" xml:space="preserve">
+    <value>Sofel</value>
+  </data>
+  <data name="License_D2" xml:space="preserve">
+    <value>Quest Corp.</value>
+  </data>
+  <data name="License_D3" xml:space="preserve">
+    <value>Sigma</value>
+  </data>
+  <data name="License_D6" xml:space="preserve">
+    <value>Naxat</value>
+  </data>
+  <data name="License_D8" xml:space="preserve">
+    <value>Capcom Co., Ltd. (2)</value>
+  </data>
+  <data name="License_D9" xml:space="preserve">
+    <value>Banpresto</value>
+  </data>
+  <data name="License_DB" xml:space="preserve">
+    <value>Hiro</value>
+  </data>
+  <data name="License_DD" xml:space="preserve">
+    <value>NCS</value>
+  </data>
+  <data name="License_DE" xml:space="preserve">
+    <value>Human Entertainment</value>
+  </data>
+  <data name="License_DF" xml:space="preserve">
+    <value>Ringler Studios</value>
+  </data>
+  <data name="License_E0" xml:space="preserve">
+    <value>K.K. DCE / Jaleco</value>
+  </data>
+  <data name="License_E2" xml:space="preserve">
+    <value>Sotsu Agency</value>
+  </data>
+  <data name="License_E4" xml:space="preserve">
+    <value>T&amp;ESoft</value>
+  </data>
+  <data name="License_E5" xml:space="preserve">
+    <value>EPOCH Co.,Ltd.</value>
+  </data>
+  <data name="License_E7" xml:space="preserve">
+    <value>Athena</value>
+  </data>
+  <data name="License_E8" xml:space="preserve">
+    <value>Asmik</value>
+  </data>
+  <data name="License_E9" xml:space="preserve">
+    <value>Natsume</value>
+  </data>
+  <data name="License_EA" xml:space="preserve">
+    <value>King/A Wave</value>
+  </data>
+  <data name="License_EB" xml:space="preserve">
+    <value>Atlus</value>
+  </data>
+  <data name="License_EC" xml:space="preserve">
+    <value>Sony Music</value>
+  </data>
+  <data name="License_EE" xml:space="preserve">
+    <value>Psygnosis / igs</value>
+  </data>
+  <data name="License_F3" xml:space="preserve">
+    <value>Beam Software</value>
+  </data>
+  <data name="License_F4" xml:space="preserve">
+    <value>Tec Magik</value>
+  </data>
+  <data name="License_FF" xml:space="preserve">
+    <value>Hudson Soft</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
 </root>
