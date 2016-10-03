@@ -136,6 +136,7 @@ void loop()
         setAddress(address, isLoROM);
         readData();
       }
+
     } else if (cmd == 'c') {
       // control
       byte b = Serial.read();
@@ -144,6 +145,18 @@ void loop()
       digitalWrite(CS, (b & B0010) ? HIGH : LOW);
       digitalWrite(WE, (b & B0100) ? HIGH : LOW);   // WR
       digitalWrite(RST, (b & B1000) ? HIGH : LOW);
+
+    } else if (cmd == 'S' || cmd == 's') {
+      // control
+      byte b = Serial.read();
+      
+      digitalWrite(OE,  LOW);   // RD
+      digitalWrite(CS, (cmd == 'S') ? HIGH : LOW);
+      digitalWrite(WE,  HIGH);   // WR
+      digitalWrite(RST, HIGH);
+
+	  // LoROM : A15, BA4(A20), BA5(A21) - high
+	  // HiROM : A13, A14, BA5(A20)      - high
     }
   }
 }
