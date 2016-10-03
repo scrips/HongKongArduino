@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExtract = new System.Windows.Forms.Button();
+            this.btnRomDump = new System.Windows.Forms.Button();
             this.cmbCOMPort = new System.Windows.Forms.ComboBox();
             this.lbROMSize = new System.Windows.Forms.Label();
             this.btnGetROMInfo = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             this.cmbROMCompo = new System.Windows.Forms.ComboBox();
             this.lbROMCompo = new System.Windows.Forms.Label();
             this.cmbROMSize = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbCOMPort = new System.Windows.Forms.Label();
             this.cmbRAMSize = new System.Windows.Forms.ComboBox();
             this.lbRAMSize = new System.Windows.Forms.Label();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -67,18 +67,19 @@
             this.txtComplementCheck = new System.Windows.Forms.TextBox();
             this.lbCheckSum = new System.Windows.Forms.Label();
             this.txtCheckSum = new System.Windows.Forms.TextBox();
+            this.btnSramDump = new System.Windows.Forms.Button();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExtract
             // 
-            this.btnExtract.Location = new System.Drawing.Point(402, 244);
-            this.btnExtract.Name = "btnExtract";
-            this.btnExtract.Size = new System.Drawing.Size(104, 23);
-            this.btnExtract.TabIndex = 0;
-            this.btnExtract.Text = "ROM吸い出し";
-            this.btnExtract.UseVisualStyleBackColor = true;
-            this.btnExtract.Click += new System.EventHandler(this.btnExtract_Click);
+            this.btnRomDump.Location = new System.Drawing.Point(402, 244);
+            this.btnRomDump.Name = "btnRomDump";
+            this.btnRomDump.Size = new System.Drawing.Size(104, 23);
+            this.btnRomDump.TabIndex = 0;
+            this.btnRomDump.Text = "ROM吸い出し";
+            this.btnRomDump.UseVisualStyleBackColor = true;
+            this.btnRomDump.Click += new System.EventHandler(this.btnExtract_Click);
             // 
             // cmbCOMPort
             // 
@@ -100,7 +101,7 @@
             // 
             // btnGetROMInfo
             // 
-            this.btnGetROMInfo.Location = new System.Drawing.Point(272, 244);
+            this.btnGetROMInfo.Location = new System.Drawing.Point(402, 7);
             this.btnGetROMInfo.Name = "btnGetROMInfo";
             this.btnGetROMInfo.Size = new System.Drawing.Size(104, 23);
             this.btnGetROMInfo.TabIndex = 4;
@@ -172,12 +173,12 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 12);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "シリアルポート:";
+            this.lbCOMPort.AutoSize = true;
+            this.lbCOMPort.Location = new System.Drawing.Point(11, 12);
+            this.lbCOMPort.Name = "lbCOMPort";
+            this.lbCOMPort.Size = new System.Drawing.Size(71, 12);
+            this.lbCOMPort.TabIndex = 12;
+            this.lbCOMPort.Text = "シリアルポート:";
             // 
             // cmbRAMSize
             // 
@@ -406,11 +407,21 @@
             this.txtCheckSum.Size = new System.Drawing.Size(163, 19);
             this.txtCheckSum.TabIndex = 37;
             // 
+            // button1
+            // 
+            this.btnSramDump.Location = new System.Drawing.Point(272, 244);
+            this.btnSramDump.Name = "btnSramDump";
+            this.btnSramDump.Size = new System.Drawing.Size(104, 23);
+            this.btnSramDump.TabIndex = 39;
+            this.btnSramDump.Text = "SRAM吸い出し";
+            this.btnSramDump.UseVisualStyleBackColor = true;
+            // 
             // WinHongKongArduino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 304);
+            this.Controls.Add(this.btnSramDump);
             this.Controls.Add(this.lbCheckSum);
             this.Controls.Add(this.txtCheckSum);
             this.Controls.Add(this.lbComplementCheck);
@@ -436,7 +447,7 @@
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.cmbRAMSize);
             this.Controls.Add(this.lbRAMSize);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbCOMPort);
             this.Controls.Add(this.cmbROMSize);
             this.Controls.Add(this.lbROMCompo);
             this.Controls.Add(this.cmbROMCompo);
@@ -447,7 +458,7 @@
             this.Controls.Add(this.btnGetROMInfo);
             this.Controls.Add(this.lbROMSize);
             this.Controls.Add(this.cmbCOMPort);
-            this.Controls.Add(this.btnExtract);
+            this.Controls.Add(this.btnRomDump);
             this.Name = "WinHongKongArduino";
             this.RightToLeftLayout = true;
             this.Text = "WinHongKongArduino";
@@ -461,31 +472,26 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnExtract;
+        private System.Windows.Forms.Label lbCOMPort;
         private System.Windows.Forms.ComboBox cmbCOMPort;
-        private System.Windows.Forms.Label lbROMSize;
-        private System.Windows.Forms.Button btnGetROMInfo;
         private System.Windows.Forms.Label lbMakerCode;
         private System.Windows.Forms.TextBox txtMakerCode;
-        private System.Windows.Forms.ComboBox cmbROMType;
         private System.Windows.Forms.Label lbROMType;
-        private System.Windows.Forms.ComboBox cmbROMCompo;
+        private System.Windows.Forms.ComboBox cmbROMType;
         private System.Windows.Forms.Label lbROMCompo;
+        private System.Windows.Forms.ComboBox cmbROMCompo;
+        private System.Windows.Forms.Label lbROMSize;
         private System.Windows.Forms.ComboBox cmbROMSize;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbRAMSize;
         private System.Windows.Forms.Label lbRAMSize;
-        private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
-        private System.Windows.Forms.TextBox txtGameCode;
+        private System.Windows.Forms.ComboBox cmbRAMSize;
         private System.Windows.Forms.Label lbGameCode;
+        private System.Windows.Forms.TextBox txtGameCode;
         private System.Windows.Forms.Label lbSpecialVer;
         private System.Windows.Forms.TextBox txtSpecialVer;
         private System.Windows.Forms.Label lbSubNumber;
         private System.Windows.Forms.TextBox txtSubNumber;
-        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lbCoPro;
         private System.Windows.Forms.ComboBox cmbCoPro;
         private System.Windows.Forms.Label lbExRAMSize;
@@ -500,6 +506,13 @@
         private System.Windows.Forms.TextBox txtComplementCheck;
         private System.Windows.Forms.Label lbCheckSum;
         private System.Windows.Forms.TextBox txtCheckSum;
+
+        private System.Windows.Forms.Button btnGetROMInfo;
+        private System.Windows.Forms.Button btnRomDump;
+        private System.Windows.Forms.Button btnSramDump;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
     }
 }
 

@@ -180,10 +180,10 @@ namespace WinHongKongArduino
 
             // ボタン無効
             btnGetROMInfo.Enabled = false;
-            btnExtract.Enabled = false;
+            btnRomDump.Enabled = false;
 
             // 吸い出し
-            sendControl(12); // OE + CS + !WE + !RST
+            sendControl(4); // OE + CS + !WE + RST
             readROM(data, 0, 0, romsize, isLoROM);
 
             // ファイル書き込み
@@ -194,14 +194,14 @@ namespace WinHongKongArduino
 
             // ボタン有効
             btnGetROMInfo.Enabled = true;
-            btnExtract.Enabled = true;
+            btnRomDump.Enabled = true;
         }
 
         // ROM情報取得
         private void btnGetROMInfo_Click(object sender, EventArgs e)
         {
             byte[] data = new byte[46];
-            sendControl(12); // OE + CS + !WE + !RST
+            sendControl(4); // OE + CS + !WE + RST
             readROM(data, 0, 0xFFB0, data.Length);
 
 
@@ -209,7 +209,7 @@ namespace WinHongKongArduino
             string makercode = "";
             for (int i = 0; i < 2; i++)
             {
-                makercode += Convert.ToChar(data[i]);
+                makercode += BitConverter.ToChar(data,i);
             }
             txtMakerCode.Text = Rs.GetString("License_" + makercode);
 
@@ -223,7 +223,10 @@ namespace WinHongKongArduino
             txtGameCode.Text = gamecode;
 
             // Fixed Value Check
-            for (int i = 6; i < 14; i++)
+            /*
+             * 仕様上は以下のチェックに通るはずだが、実際にはFFで
+             * Fill されているROMがあるため、チェックは行わない。
+            for (int i = 6; i < 13; i++)
             {
                 if(data[i] != 0x00)
                 {
@@ -231,10 +234,10 @@ namespace WinHongKongArduino
                     return;
                 }
             }
-
+            */
 
             // 拡張RAMサイズ
-            switch (data[14])
+            switch (data[13])
             {
                 case 0x00:
                     txtExRAMSize.Text = Rs.GetString("ExRAMSize_00");
@@ -482,11 +485,16 @@ namespace WinHongKongArduino
 
 
             // Fixed value check
+            /*
+             * 仕様上は以下のチェックに通るはずだが、実際にはFFで
+             * となっているいるROMがあるため、チェックは行わない。
+             * 
             if (data[42] != 0x33)
             {
                 MessageBox.Show("読み込まれたヘッダが正しくありません");
                 return;
             }
+            */
 
             // Version
             txtVersion.Text = "1." + Convert.ToString(data[43]);

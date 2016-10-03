@@ -96,10 +96,10 @@ void setup()
 
   digitalWrite(DIR, LOW); // 入力
   
-  digitalWrite(OE, LOW);
+  digitalWrite(OE, LOW);  // RD
   digitalWrite(CS, LOW);
-  digitalWrite(WE, HIGH);
-  digitalWrite(RST, HIGH);
+  digitalWrite(WE, HIGH); // WR
+  digitalWrite(RST, LOW);
 
   Serial.begin(115200);
 }
@@ -140,9 +140,9 @@ void loop()
       // control
       byte b = Serial.read();
       
-      digitalWrite(OE, (b & B0001) ? HIGH : LOW);
+      digitalWrite(OE, (b & B0001) ? HIGH : LOW);   // RD
       digitalWrite(CS, (b & B0010) ? HIGH : LOW);
-      digitalWrite(WE, (b & B0100) ? HIGH : LOW);
+      digitalWrite(WE, (b & B0100) ? HIGH : LOW);   // WR
       digitalWrite(RST, (b & B1000) ? HIGH : LOW);
     }
   }
