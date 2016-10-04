@@ -21,25 +21,30 @@ const int RST = 19;
 
 void setDataDir(int DATADIR)
 {
-  for (int i = 0; i < 8; i++) {
-    pinMode(DATA0 + i, DATADIR);
+  if (DATADIR == INPUT) {
+    DDRD &= 0b00000011;
+    DDRB &= 0b11111100;
+  } else {
+    DDRD |= 0b11111100;
+    DDRB |= 0b00000011;
   }
 }
 
 void setData(byte b)
 {
-  for (int i = 0; i < 8; i++) {
-    digitalWrite(DATA0 + i, (b & (1 << i)) ? HIGH : LOW);
-  }
+  PORTD &= 0b00000011;
+  PORTB &= 0b11111100;
+  PORTD |= b << 2;
+  PORTB |= b >> 6;
 }
 
 void outCh(int ch, byte b)
 {
-  digitalWrite(G0 + ch, LOW); // Ch Enable
+  PORTB &= ~0b00001000 << ch; //0b11110111
   setData(b);
-  digitalWrite(CK, HIGH);
-  digitalWrite(CK, LOW);
-  digitalWrite(G0 + ch, HIGH); // Ch Disable
+  PORTC |= 0b00000010;
+  PORTC &= 0b11111101;
+  PORTB |= 0b00001000 << ch; // Ch Disable
 }
 
 void setAddress(unsigned long address, int isLoROM)
@@ -101,7 +106,7 @@ void setup()
   digitalWrite(WE, HIGH); // WR
   digitalWrite(RST, LOW);
 
-  Serial.begin(115200);
+  Serial.begin(500000);
 }
 
 void loop()
